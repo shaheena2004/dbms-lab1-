@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Kalam:wght@300;400;700&family=Krona+One&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: myFirstFont;
+  src: url(Miraculous&Christmas.ttf);
+}
+@font-face {
+    font-family: Sallenas Grandes;
+    src: url(SallenasGrandes\ Regular.ttf);
+}
+
+*{
+  transition: all 0.5s ease;
+}
+body, html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+.back{
+    background-attachment: fixed;
+    background-image: url('./homebg.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.content {
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+.title {
+    color: #FFD700;
+    font-family: 'Sallenas Grandes';
+    font-size: 36px;
+}
+
+.description {
+    color: white;
+    font-family: 'Sallenas Grandes';
+    font-size: 24px;
+}
+
+.heading-container {
+  text-align: center;
+  padding: 50px 0;
+  background-color: rgba(11, 3, 60, 0.7);
+}
+.main-heading {
+  font-family: myFirstFont;
+  color: #FFD700;
+  font-size: 6vw;
+}
+nav {
+  background-color: rgba(11, 3, 60, 0.8);
+  text-align: center;
+  padding: 10px 0;
+}
+nav a {
+  color: #FFD700;
+  font-family: "Krona One", sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2vw;
+}
+nav a:hover {
+  color: aliceblue;
+}
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  color: aliceblue;
+}
+.section h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+.section p {
+  font-family: "Kalam", "cursive";
+  font-size: 2vw;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headPar {
+    position: relative;
+    height: 75px;
+    border: 3px solid #ab8d60;
+}
+.headTxt {
+    color: aliceblue;
+    font-family: myFirstFont;
+    font-weight: 500;
+    font-size: 3.5vw;
+    background-color: rgba(11, 3, 60, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; 
+    border: 3px solid #ab8d60;
+    top: 5px;
+    height: 75px;
+    left: 5px;
+}
+.imgPar {
+    margin-top: 100px;
+    width: 300px;
+    position: relative;
+    height: 350px;
+    border: 3px solid #ab8d60;
+    box-sizing: border-box;
+}
+.imgChi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(11, 3, 60, 0.5);
+    position: relative; 
+    border: 3px solid #ab8d60;
+    top: 5px;
+    height: 350px;
+    left: 5px;
+    box-sizing: border-box;
+}
+.image {
+    width: 60%;
+    height: 60%;
+}
+.normal-head {
+    text-align: center;
+    font-family: "Krona One", "sans-serif";
+    padding-top: 10%;
+    font-size: 1.3vw;
+    color: aliceblue;
+}
+.normal-text {
+    text-align: center;
+    font-family: "Kalam", "cursive";
+    padding-top: 9%;
+    font-size: 1vw;
+    font-weight: 500;
+    color: aliceblue;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    place-items: center; 
+}
+@media (min-width: 600px) {
+    nav a {
+        font-size: 1.5vw;
+    }
+    .section h2 {
+        font-size: 3vw;
+    }
+    .section p {
+        font-size: 1.5vw;
+    }
+}
+@media (min-width: 700px) and (max-width: 1500px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }  
+}
+@media (min-width: 1500px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+a:hover {
+  cursor: pointer;
+}
+</style>
+</head>
+<body class="back">
+    <div class="heading-container">
+        <div class="main-heading">Kashiyatra Chronicles</div>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#theme">Theme</a>
+        <a href="#events">Events</a>
+        <a href="#pronites">Pro nites</a>
+    </nav>
+
+    <div id="home" class="middle">
+        <div class="content">
+            <p class="title">Welcome to Kashiyatra!</p>
+            <p class="description">Kashiyatra is IIT(BHU), Varanasi's premier Socio-Cultural Festival, a vibrant three-day celebration filled with captivating literary, musical, and artistic events. Experience the magic of the largest cultural festival in North India, set in the historic and holy city of Varanasi.</p>
+            <p class="description">Explore our site to discover the exciting lineup of events, themes, and competitions we have in store for you. Join us in celebrating the rich heritage and dynamic culture that makes Kashiyatra an unforgettable experience!</p>
+        </div>
+    </div>
+      
+    <div id="about" class="middle">
+        <div class="headPar" style="width: 250px;">
+            <div class="headTxt" style="width: 250px;">
+                <div>About Us</div>
+            </div>
+        </div>
+        <div class="content">
+            <p style="color: white; font-family: 'Sallenas Grandes'; font-size: 24px;">
+                Kashiyatra, the annual IIT(BHU), Varanasi's Socio-Cultural Festival, is a three-day fiesta that aims to captivate everyone with its enchanting literary, musical, and artistic events. It is the largest North Indian cultural festival.
+            </p>
+            <p style="color: white; font-family: 'Sallenas Grandes'; font-size: 24px;">
+                IIT(BHU) is one of the largest residential universities in Asia. It is situated in the holy city of Varanasi, the Eternal City, home to a plethora of traditions and an ecstatic mix of cultures from across our country. IIT(BHU) recently marked its centenary, making this year's Kashiyatra even more special.
+            </p>
+        </div>
+    </div>
+    
+    <div id="theme" class="middle">
+        <div class="headPar" style="width: 250px;">
+            <div class="headTxt" style="width: 250px;">
+                <div>Theme</div>
+            </div>
+        </div>
+        <div class="content">
+            <p style="color: #FFD700; font-family: 'Sallenas Grandes'; font-size: 36px;">Cadence Kaleidoscope: Old Soul, New Groove</p>
+            <p style="color: white; font-family: 'Sallenas Grandes'; font-size: 24px;">
+                This year’s theme celebrates the harmonious blend of our rich past cultures and traditions with modern-age practices. It honors the fusion of classic and futuristic elements to create a vibrant and unique funfair experience. Embracing the vast diversity of cultures and customs, it also celebrates the potential of the future, offering a truly unique and immersive experience.
+            </p>
+        </div>
+    </div>
+
+    <div id="events" class="middle">
+        <div class="headPar" style="width: 250px;">
+            <div class="headTxt" style="width: 250px;">
+                <div>Events</div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery" style="margin-bottom: 40px;">
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="d1.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">CUT-A-RUG</div>
+                    <div class="normal-text">Natraj, symbolizing Shiva's energy, invites you to Kashiyatra's "Cut-A-Rug - the Solo Dance Competition."</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="d2.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">BLISS</div>
+                    <div class="normal-text">Kashiyatra presents "Bliss - the Group Dance Competition," where talent and creativity unify with every beat on stage.</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="d3.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">ECSTASY</div>
+                    <div class="normal-text">Partner up, showcase your dance moves, and prove you can conquer the stage togethe</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="d4.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">CYPHER OF MOBS</div>
+                    <div class="normal-text">Showcase your street dancing skills at Kashiyatra and compete for the winner’s title!</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="gallery" style="margin-bottom: 40px;">
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="s1.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">RAAGSAMAR</div>
+                    <div class="normal-text">If you can captivate with soft acoustic music, don't miss the chance to join Unplugged!</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="s2.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">SANLAYAN</div>
+                    <div class="normal-text">Kashiyatra invites you to create and experience magical harmonies with instruments.</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="s3.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">SUR</div>
+                    <div class="normal-text">Showcase your heart-winning voice at “SUR: The Solo Singing Event” and dazzle the stage!</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="s4.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">KRITI</div>
+                    <div class="normal-text">Kriti is your chance to shine with a self-composed song, capturing hearts with your creativity and vocal performance.</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="gallery" style="margin-bottom: 40px;">
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="a1.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">RANGBAAZI</div>
+                    <div class="normal-text">Show your creativity by painting with unconventional tools like toothbrushes or fingers, but without using pencils or brushes.</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="a2.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">SOAP CARVING</div>
+                    <div class="normal-text">Transform mundane soap into art by carving your creativity, much like Michelangelo's marble.</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="a3.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">FACE PAINTING</div>
+                    <div class="normal-text">Paint your buddy's face according to the given theme and win prizes!</div>
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="a4.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head">LIVE SKETCHING</div>
+                    <div class="normal-text">An individual event where participants sketch a wide scene to accommodate varied submissions from multiple institutes.</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <!-- Pronites-->
+    <div id="pronites" class="middle">
+        <div class="headPar" style="width: 300px;">
+            <div class="headTxt" style="width: 300px;">
+                <div>Pro nites</div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="p4.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head"></div>
+                    
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="p3.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head"></div>
+                    
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="p2.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head"></div>
+                    
+                </div>
+            </div>
+        </a>
+        <a class="imgPar">
+            <div class="imgChi">
+                <img src="p1.jpg" alt="testImg" class="image">
+                <div>
+                    <div class="normal-head"></div>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+</body>
+</html>
